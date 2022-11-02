@@ -27,8 +27,8 @@ layout: archive
 
 ## 현재...
 새로운 삶을 살아가기 위하여 코딩 공부중
-![증명사진]({{ '/assets/images/me01.jpg'|url }})
+![증명사진]({{ site.url }}{{ site.baseurl }}/assets/images/me01.jpg)
 
 ## 미래...
 밝은 미래? :)
-![가족사진]({{ '/assets/images/family01.jpg'|url }})
+![가족사진]({{ site.url }}{{ site.baseurl }}/assets/images/family01.jpg)
