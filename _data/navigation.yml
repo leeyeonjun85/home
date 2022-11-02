@@ -6,10 +6,10 @@ main:
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  - title: "About"
+  - title: "이연준 소개"
     url: /about/
     # url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Posts"
+  - title: "Years..."
     url: /year-archive/
   - title: "Categories"
     url: /categories/
