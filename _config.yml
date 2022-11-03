@@ -109,9 +109,9 @@ analytics:
 # Site Author
 author:
   name             : "이연준"
-  avatar           : "/assets/images/me02.jpg"
+  avatar           : "/assets/images/profile/me02.jpg"
   bio              : >-
-    느리지만 꾸준하게...
+    느리지만 꾸준하게...🐌
   location         : "Asan, South Korea"
   email            : "leeyeonjun85@gmail.com"
   links:
@@ -295,3 +295,42 @@ defaults:
       comments: true
       share: true
       related: true
+  # _recipes
+  - scope:
+      path: ""
+      type: recipes
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _pets
+  - scope:
+      path: ""
+      type: pets
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
+
+# collention
+collections:
+  # recipes:
+  #   output: true
+  #   permalink: /:collection/:path/
+  # pets:
+  #   output: true
+  #   permalink: /:collection/:path/
+  Portfolio:
+    output: true
+    permalink: /:collection/:path/

@@ -6,18 +6,23 @@ main:
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
+  
+  
   - title: "이연준 소개"
     url: /about/
     # url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Years..."
-    url: /year-archive/
   - title: "Categories"
     url: /categories/
+  - title: "Collections"
+    url: /collection-archive/
   - title: "Tags"
     url: /tags/
+  - title: "Years..."
+    url: /year-archive/
+  
+  
   # - title: "Pages"
   #   url: /page-archive/
-  # - title: "Collections"
-  #   url: /collection-archive/
+  
   # - title: "External Link"
   #   url: https://google.com
