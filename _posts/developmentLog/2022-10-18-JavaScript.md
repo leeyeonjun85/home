@@ -1,12 +1,11 @@
 ---
 title: "JavaScript"
 categories:
-  - coding
+  - developmentLog
   - JavaScript
 tags:
-  - coding
-  - JavaScript
-  - web
+  - 개발일지
+  - 코딩
 toc	: "Menu"
 toc_label	:
 toc_icon :

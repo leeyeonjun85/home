@@ -46,11 +46,11 @@ comments:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
   giscus:
-    repo_id              : "R_kgDOIWxCEQ"
+    repo_id              : "leeyeonjun85"
     category_name        : "Announcements"
     category_id          : "DIC_kwDOIWxCEc4CSVA6"
     discussion_term      : "pathname"
-    reactions_enabled    : '1'
+    reactions_enabled    : "1"
     theme                : "preferred_color_scheme"
     # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
   staticman:
