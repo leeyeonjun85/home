@@ -20,34 +20,21 @@
         dummy.select();
         document.execCommand("copy");
         document.body.removeChild(dummy);
-        toast();
+
+        let selectedID = document.querySelector('.btn--primary');
+        let CreateDiv = document.createElement('div');
+        
+        CreateDiv.innerHTML = 'URL 복사 완료🔗';
+        CreateDiv.id = 'snackbar';
+        selectedID.appendChild(CreateDiv);
+        CreateDiv.className = "show";
+        
+        setTimeout(function () { CreateDiv.className = CreateDiv.className.replace("show", ""); }, 3000);
     }
 </script>
 
-<style>
-    #btn--url {
-        color: white;
-        background-color: rgb(80, 80, 80);
-        font-size: 18px;
-    }
-    #btn--url:hover {
-        color: white;
-        background-color: rgb(59, 59, 59);
-        font-size: 18px;
-    }
-</style>
 
 
-
-
-
-<script>
-    function toast() {
-        var x = document.getElementById("snackbar");
-        x.className = "show";
-        setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
-    }
-</script>
 <style>
     #snackbar {
         visibility: hidden;

@@ -30,6 +30,7 @@
 
   /* button colors */
   $buttoncolors:
+  (url, $url-color),
   (primary, $primary-color),
   (inverse, #fff),
   (light-outline, transparent),
