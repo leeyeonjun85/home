@@ -63,5 +63,8 @@ last_modified_at: 2022-11-04
 
 ## vscode에 python 가상환경 설정
 
+## urls, views에 html 연결
+
 # 주요 특징
-- 주요 특징에 대한 내용
+- python의 djnago프레임워크를 활용한 나의 첫 프로젝트이다.
+- pymongo를 사용하여 mongoDB에서 write, read 기능을 구현하였다.
