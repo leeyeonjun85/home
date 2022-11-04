@@ -45,13 +45,23 @@ last_modified_at: 2022-11-04
 
 ## 프레임워크
 - django
+- 스파르타 웹개발 종합반에서는 flask를 사용하였지만, 나는 django를 사용
 - python에서 가장 많이 쓰이는 django 프레임워크 사용
 
 ## Data Base
 - mongoDB
+- pymongo를 이용
 
 # 개발 과정
-- 개발 과정에 대한 내용
+## 작업디렉토리 구성
+- 스파르타 웹개발 종합반에서 만든 다른 앱들도 만들것이기 때문에 'sparta' 작업폴더를 생성
+```
+(root)
+  |-- mysite
+  |-- sparta
+```
+
+## vscode에 python 가상환경 설정
 
 # 주요 특징
 - 주요 특징에 대한 내용
