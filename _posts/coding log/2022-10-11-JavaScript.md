@@ -1,7 +1,7 @@
 ---
 title: "JavaScript"
 categories:
-  - developmentLog
+  - Coding
   - JavaScript
 tags:
   - 개발일지

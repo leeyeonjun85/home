@@ -1,26 +1,24 @@
 ---
 title: "화성땅 공동구매"
-excerpt: "스파르타 코딩클럽 웹개발종합반 - 화성땅 공동구매"
+categories:
+  - Coding
+  - Project
+tags:
+  - 개발일지
+  - 코딩
+  - 스파르타
+  - 화성땅 공동구매
+
 header:
-  image: /assets/images/portfolio/spartaWeb-mars/20221103_174429.png
-  teaser: /assets/images/portfolio/spartaWeb-mars/20221103_174429.png
-# sidebar:
-#   - title: "Role"
-#     image: http://placehold.it/350x250
-#     image_alt: "logo"
-#     text: "Designer, Front-End Developer"
-#   - title: "Responsibilities"
-#     text: "Reuters try PR stupid commenters should isn't a business model"
+  # image: /assets/images/post/spartaWeb-mars/20221103_174429.png
+  teaser: /assets/images/post/spartaWeb-mars/20221103_174429.png
+
 gallery:
-  - url: /assets/images/portfolio/spartaWeb-mars/20221103_174429.png
-    image_path: /assets/images/portfolio/spartaWeb-mars/20221103_174429.png
+  - url: /assets/images/post/spartaWeb-mars/20221103_174429.png
+    image_path: /assets/images/post/spartaWeb-mars/20221103_174429.png
     alt: "sparta-mars"
 
-layout: archive
-author_profile: true
-toc: "MENU"
-toc_sticky: true
-# toc_label: "MENU_label"
+last_modified_at: 2022-11-04
 ---
 
 
@@ -36,7 +34,7 @@ Pictures of Goats section West Seattle Blog dingbat newspaper rubber cement Goog
 # 제목1-2
 hackgate copyright Lucius Nieman CNN leaves it there right-sizing a giant stack of newspapers that you'll never read net neutrality algorithms RT algorithms TechCrunch 5% corruption, horse-race coverage Gardening & War section CTR try PR CPC David Cohn shoot a photo algorithms content is king Android Snarkmarket crowdfunding, Fuego Twitter topples dictators YouTube abundance WordPress Reuters try PR stupid commenters should isn't a business model bringing a tote bag to a knife fight.
 ## 제목2
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
+{% include gallery caption="image" %}
 ### 제목3
 hackgate copyright Lucius Nieman CNN leaves it there right-sizing a giant stack of newspapers that you'll never read net neutrality algorithms RT algorithms TechCrunch 5% corruption, horse-race coverage Gardening & War section CTR try PR CPC David Cohn shoot a photo algorithms content is king Android Snarkmarket crowdfunding, Fuego Twitter topples dictators YouTube abundance WordPress Reuters try PR stupid commenters should isn't a business model bringing a tote bag to a knife fight.
 hackgate copyright Lucius Nieman CNN leaves it there right-sizing a giant stack of newspapers that you'll never read net neutrality algorithms RT algorithms TechCrunch 5% corruption, horse-race coverage Gardening & War section CTR try PR CPC David Cohn shoot a photo algorithms content is king Android Snarkmarket crowdfunding, Fuego Twitter topples dictators YouTube abundance WordPress Reuters try PR stupid commenters should isn't a business model bringing a tote bag to a knife fight.

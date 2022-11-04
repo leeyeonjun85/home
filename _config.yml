@@ -318,6 +318,18 @@ defaults:
       author_profile: true
       share: true
       comment: true
+  # _Life
+  - scope:
+      path: ""
+      type: Life
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+      toc: true
+      toc_sticky: true
+      toc_label: "MENU"
   # _portfolio
   - scope:
       path: ""
@@ -327,20 +339,16 @@ defaults:
       author_profile: true
       share: true
       
-      toc: true
-      toc_sticky: true
-      toc_label: "MENU_portfolio"
-      
 
 
-# # collections
-# collections:
-#   recipes:
-#     output: true
-#     permalink: "{{ site.baseurl }}/:collection/:path/"
-#   # pets:
-#   #   output: true
-#   #   permalink: /:collection/:path/
-#   Portfolio:
-#     output: true
-#     permalink: "{{ site.baseurl }}/:collection/:path/"
+# collections
+collections:
+  # ETC:
+  #   output: true
+  #   permalink: /:collection/:path/
+  Life:
+    output: true
+    permalink: /:collection/:path/
+  # Food:
+  #   output: true
+  #   permalink: /:collection/:path/

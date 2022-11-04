@@ -8,20 +8,15 @@ main:
   #   url: /collection-archive/
   
   
-  - title: "이연준 소개"
+  - title: "About me"
     url: /about/
     # url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "About Me"
-    url: /aboutme/
-  - title: "Categories"
+  - title: "Coding log"
     url: /categories/
-  
-  # - title: "Collections"
-  #   url: /collection-archive/
-  - title: "Tags"
+  - title: "by Tags"
     url: /tags/
-  - title: "Years..."
-    url: /year-archive/
+  - title: "Blog"
+    url: /collection-archive/
   
   
   # - title: "Pages"

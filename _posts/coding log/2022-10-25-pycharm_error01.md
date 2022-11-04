@@ -1,8 +1,8 @@
 ---
 title: "파이참 재설치 후 인터프리터 에러 해결 하기"
 categories:
-  - developmentLog
-  - python
+  - Coding
+  - Python
 tags:
   - 개발일지
   - 코딩
