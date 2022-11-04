@@ -295,6 +295,11 @@ defaults:
       comments: true
       share: true
       related: true
+
+      toc: true
+      toc_sticky: true
+      toc_label: "MENU"
+
   # _recipes
   - scope:
       path: ""
@@ -319,18 +324,23 @@ defaults:
       type: portfolio
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true
+      
+      toc: true
+      toc_sticky: true
+      toc_label: "MENU_portfolio"
+      
 
 
-# collention
-collections:
-  # recipes:
-  #   output: true
-  #   permalink: /:collection/:path/
-  # pets:
-  #   output: true
-  #   permalink: /:collection/:path/
-  Portfolio:
-    output: true
-    permalink: /:collection/:path/
+# # collections
+# collections:
+#   recipes:
+#     output: true
+#     permalink: "{{ site.baseurl }}/:collection/:path/"
+#   # pets:
+#   #   output: true
+#   #   permalink: /:collection/:path/
+#   Portfolio:
+#     output: true
+#     permalink: "{{ site.baseurl }}/:collection/:path/"
