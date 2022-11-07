@@ -1,6 +1,6 @@
 ---
-title: "화성땅 공동구매"
-excerpt: "화성에 땅을 사둘 수 있는 절호의 기회! 화성땅 공동구매에 참여하세요~"
+title: "영화 기록실"
+excerpt: "영화 기록실: 내 생애 최고의 영화들"
 categories:
   - Coding
   - Project
@@ -8,27 +8,27 @@ tags:
   - 개발일지
   - 코딩
   - 스파르타
-  - 화성땅 공동구매
+  - 영화기록실
 
 header:
   # image: /assets/images/post/spartaWeb-mars/20221103_174429.png
-  teaser: /assets/images/post/spartaWeb-mars/20221103_174429.png
+  teaser: /assets/images/post/spartaWeb-moviedia/spartaWeb-moviedia_01.jpg
 
 gallery:
-  - url: /assets/images/post/spartaWeb-mars/20221103_174429.png
-    image_path: /assets/images/post/spartaWeb-mars/20221103_174429.png
-    alt: "화성땅 공동구매 이미지"
-  - url: /assets/images/post/spartaWeb-mars/20221104_190756.png
-    image_path: /assets/images/post/spartaWeb-mars/20221104_190756.png
-    alt: "화성땅 공동구매 이미지"
+  - url: /assets/images/post/spartaWeb-moviedia/spartaWeb-moviedia_01.jpg
+    image_path: /assets/images/post/spartaWeb-moviedia/spartaWeb-moviedia_01.jpg
+    alt: "영화기록실 이미지"
+  - url: /assets/images/post/spartaWeb-moviedia/spartaWeb-moviedia_02.jpg
+    image_path: /assets/images/post/spartaWeb-moviedia/spartaWeb-moviedia_02.jpg
+    alt: "영화기록실 이미지"
 
-last_modified_at: 2022-11-04
+last_modified_at: 2022-11-06
 ---
 
 
-{% include gallery caption="화성땅 공동구매 이미지" %}
+{% include gallery caption="영화기록실 이미지" %}
 
-# [화성땅 공동구매 : 바로가기](http://leeyj85.shop/spartaWeb/spartaWeb_mars/)
+# [영화기록실 : 바로가기](http://leeyj85.shop/spartaWeb/spartaWeb_moviedia/)
 
 
 # 준비 과정
@@ -68,3 +68,4 @@ last_modified_at: 2022-11-04
 # 주요 특징
 - python의 djnago프레임워크를 활용한 나의 첫 프로젝트이다.
 - pymongo를 사용하여 mongoDB에서 write, read 기능을 구현하였다.
+- bs4, requests를 사용하여 웹스크래핑을 시도하였다.

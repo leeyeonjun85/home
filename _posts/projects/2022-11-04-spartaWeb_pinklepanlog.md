@@ -1,6 +1,6 @@
 ---
-title: "화성땅 공동구매"
-excerpt: "화성에 땅을 사둘 수 있는 절호의 기회! 화성땅 공동구매에 참여하세요~"
+title: "핑클 팬명록"
+excerpt: "이 시대 최고의 걸그룹 핑클 팬명록~!"
 categories:
   - Coding
   - Project
@@ -8,27 +8,24 @@ tags:
   - 개발일지
   - 코딩
   - 스파르타
-  - 화성땅 공동구매
+  - 핑클 팬명록
 
 header:
-  # image: /assets/images/post/spartaWeb-mars/20221103_174429.png
-  teaser: /assets/images/post/spartaWeb-mars/20221103_174429.png
+  # image: /assets/images/post/spartaWeb-pinklepanlog/20221103_174429.png
+  teaser: /assets/images/post/spartaWeb-pinklepanlog/spartaWeb-pinklepanlog_01.jpg
 
 gallery:
-  - url: /assets/images/post/spartaWeb-mars/20221103_174429.png
-    image_path: /assets/images/post/spartaWeb-mars/20221103_174429.png
-    alt: "화성땅 공동구매 이미지"
-  - url: /assets/images/post/spartaWeb-mars/20221104_190756.png
-    image_path: /assets/images/post/spartaWeb-mars/20221104_190756.png
-    alt: "화성땅 공동구매 이미지"
+  - url: /assets/images/post/spartaWeb-pinklepanlog/spartaWeb-pinklepanlog_01.jpg
+    image_path: /assets/images/post/spartaWeb-pinklepanlog/spartaWeb-pinklepanlog_01.jpg
+    alt: "핑클팬명록 이미지"
 
-last_modified_at: 2022-11-04
+last_modified_at: 2022-11-07
 ---
 
 
-{% include gallery caption="화성땅 공동구매 이미지" %}
+{% include gallery caption="핑클팬명록 이미지" %}
 
-# [화성땅 공동구매 : 바로가기](http://leeyj85.shop/spartaWeb/spartaWeb_mars/)
+# [핑클팬명록 : 바로가기](http://leeyj85.shop/spartaWeb/spartaWeb_panlog_pinkle/)
 
 
 # 준비 과정
@@ -68,3 +65,4 @@ last_modified_at: 2022-11-04
 # 주요 특징
 - python의 djnago프레임워크를 활용한 나의 첫 프로젝트이다.
 - pymongo를 사용하여 mongoDB에서 write, read 기능을 구현하였다.
+- API를 활용하여 현재기온을 구현하였다.
