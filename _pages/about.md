@@ -15,12 +15,17 @@ last_modified_at: 2022-11-02
 
 
 # 과거...
-20~30대를 헛되이 살아왔음😥
+고등학교 졸업 후 곧바로 신학교 입학  
+2022년 38살의 나이에 이직 결정🎈
 
 # 현재...
-새로운 삶을 살아가기 위하여 코딩 공부중💻
+생활비를 벌기 위해 수학과외 알바📝  
+새로운 삶을 살아가기 위하여 코딩 공부중💻  
 ![증명사진]({{ site.url }}{{ site.baseurl }}/assets/images/profile/me01.jpg)
 
 # 미래...
-밝은 미래 😃🌈
+밝은 미래 😃🌈  
 ![가족사진]({{ site.url }}{{ site.baseurl }}/assets/images/profile/family01.jpg)
+
+
+

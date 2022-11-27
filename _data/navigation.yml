@@ -10,13 +10,12 @@ main:
   
   - title: "About me"
     url: /about/
-    # url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Coding log"
+  - title: "Categories"
     url: /categories/
-  - title: "by Tags"
+  - title: "Tags"
     url: /tags/
   - title: "Blog"
-    url: /collection-archive/
+    url: /blog/
   
   
   # - title: "Pages"
