@@ -19,7 +19,7 @@ last_modified_at: 2022-11-02
 2022년 38살의 나이에 이직 결정🗽. 
 
 # 현재...
-'오투공부방'을 아내와 함께 운영📚.  
+'[오투공부방](https://leeyj85.shop.o2study)'을 아내와 함께 운영📚.  
 새로운 직장을 얻기 위해 코딩 공부중💻.  
 ![증명사진]({{ site.url }}{{ site.baseurl }}/assets/images/profile/me01.jpg)
 
