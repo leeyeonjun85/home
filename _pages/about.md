@@ -24,7 +24,7 @@ last_modified_at: 2022-11-02
 ![증명사진]({{ site.url }}{{ site.baseurl }}/assets/images/profile/me01.jpg)
 
 # 미래...
-사랑하는 가족과 밝은 미래😃🌈. 
+사랑하는 가족과 밝은 미래😃🌈.  
 ![가족사진]({{ site.url }}{{ site.baseurl }}/assets/images/profile/family01.jpg)
 
 
