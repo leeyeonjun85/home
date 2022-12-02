@@ -15,11 +15,9 @@ header:
   teaser: /assets/images/post/2022-12-02-games_mathrain-01.png
 
 gallery:
-  - url: /assets/images/post/2022-12-02-games_mathrain-02.png
-    image_path: /assets/images/post/2022-12-02-games_mathrain-02.png
+  - image_path: /assets/images/post/2022-12-02-games_mathrain-02.png
     alt: "Math rain image1"
-  - url: /assets/images/post/2022-12-02-games_mathrain-02.png
-    image_path: /assets/images/post/2022-12-02-games_mathrain-02.png
+  - image_path: /assets/images/post/2022-12-02-games_mathrain-03.png
     alt: "Math rain image2"
 
 last_modified_at: 2022-12-02
