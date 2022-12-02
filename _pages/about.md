@@ -16,15 +16,15 @@ last_modified_at: 2022-11-02
 
 # 과거...
 10년 넘게 다니던 안정적인 직장을 그만두고... 
-2022년 38살의 나이에 이직 결정🎈
+2022년 38살의 나이에 이직 결정🗽. 
 
 # 현재...
-생활비를 벌기 위해 수학과외 알바📝  
-새로운 삶을 살아가기 위하여 코딩 공부중💻  
+'[오투공부방](http://leeyj85.shop/o2study/)'을 아내와 함께 운영📚.  
+새로운 직장을 얻기 위해 코딩 공부중💻.  
 ![증명사진]({{ site.url }}{{ site.baseurl }}/assets/images/profile/me01.jpg)
 
 # 미래...
-밝은 미래 😃🌈  
+사랑하는 가족과 함께 밝은 미래😃🌈.  
 ![가족사진]({{ site.url }}{{ site.baseurl }}/assets/images/profile/family01.jpg)
 
 
