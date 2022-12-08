@@ -46,6 +46,5 @@ last_modified_at: 2022-12-07
     - 데스크탑, 태블릿, 스마트폰 모두 설치 완료✅
     - 사용자이름 : AI_17_이연준✅  
 <br>  
-# 학습일정  
-![AI부트캠프 커리큘럼](https://oopy.lazyrockets.com/api/v2/notion/image?src=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F5f2de420-36ad-4b61-84c2-09a3a82d4cf3%2FUntitled.png&blockId=769345c6-f297-452c-95c1-82e1b7298412)  
+
   
