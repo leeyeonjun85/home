@@ -4,6 +4,7 @@ excerpt: "파이썬으로 데이터분석 연습하기"
 categories:
   - Coding
   - study
+  - python
 tags:
   - 개발일지
   - 코딩
