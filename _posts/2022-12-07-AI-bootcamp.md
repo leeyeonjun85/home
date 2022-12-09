@@ -46,5 +46,8 @@ last_modified_at: 2022-12-07
     - 데스크탑, 태블릿, 스마트폰 모두 설치 완료✅
     - 사용자이름 : AI_17_이연준✅  
 <br>  
+## colab과 github 연결  
+- 코드스테이츠에서 이용하게 될 colab을 github와 연동
+- 나는 기존에 이용하던 vscode를 중심으로 git연동을 할 것임  
 
   
