@@ -8,6 +8,7 @@ tags:
   - 개발일지
   - 코딩
   - AI 부트캠프
+  - 코드스테이츠
 
 header:
   teaser: https://www.codestates.com/assets/codestates-ci.png
