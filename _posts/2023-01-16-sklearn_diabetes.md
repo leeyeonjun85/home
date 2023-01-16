@@ -29,14 +29,15 @@ last_modified_at: 2023-01-16
 
 
 <br><br><hr><br><br>
-<div style="text-align : center;">
+<div style="text-align : center; font-size : 2rem">
 
-# 토이데이터 살펴보기<br>Scikit-Learn : Diabetes
-
+토이데이터 살펴보기
+Scikit-Learn : Diabetes
 
 </div>  
 <br><br><hr><br><br>
 
+# Scikit-Learn 의 Diabetes 데이터셋
 
 - 사이킷런에서 제공하는 여러 토이데이터셋 가운데 diabetes (당뇨병) 살펴보기
 
@@ -45,18 +46,21 @@ last_modified_at: 2023-01-16
 >- [사이킷런 제공 연습데이터셋 리스트](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets)  
 >- [diabetes 공식문서](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html#sklearn.datasets.load_diabetes)
 
-
+<br><br>
 
 ## 데이터 확인
 ### 불러오기
-- 기본적인 방법으로 데이터 불러오기  
+- 기본적인 방법으로 데이터 불러오기   
+
 ```python
 # 라이브러리 임포트
 from sklearn import datasets
 
 # 당뇨병데이터 불러오기
 diabetes = datasets.load_diabetes()
-```
+```  
+
+<br><br>
 
 ### 데이터 확인
 - sklearn 에서 제공하는 토이데이터는 딕셔너리형태로 제공
@@ -70,11 +74,14 @@ diabetes = datasets.load_diabetes()
   diabetes.keys()
   ```
   >dict_keys(['data', 'target', 'frame', 'DESCR', 'feature_names', 'data_filename', 'target_filename', 'data_module'])
-  - key를 하나하나 확인하여 key에 있는 value를 확인해보자
-- data
+  - key를 하나하나 확인하여 key에 있는 value를 확인해보자  
+
+- data  
+
   ```python
   diabetes.data
-  ```
+  ```  
+
   >array([[ 0.03807591,  0.05068012,  0.06169621, ..., -0.00259226,
          0.01990842, -0.01764613],
        [-0.00188202, -0.04464164, -0.05147406, ..., -0.03949338,
@@ -91,10 +98,12 @@ diabetes = datasets.load_diabetes()
   - 흔히 독립변수, 피쳐라고 부르는 데이터들이 나온다
   - 행과 열이 있는 2차원 배열이다
 
-- target
+- target  
+
   ```python
   diabetes.target
-  ```
+  ```  
+
   >array([151.,  75., 141., 206., 135.,  97., 138.,  63., 110., 310., 101.,
         69., 179., 185., 118., 171., 166., 144.,  97., 168.,  68.,  49.,
         68., 245., 184., 202., 137.,  85., 131., 283., 129.,  59., 341.,
@@ -107,11 +116,13 @@ diabetes = datasets.load_diabetes()
         83., 128., 102., 302., 198.,  95.,  53., 134., 144., 232.,  81., ...
         ...
   - 종속변수, 타겟이라고 부르는 데이터
-  - 1차원 배열
-- DESCR
+  - 1차원 배열  
+
+- DESCR  
   ```python
   print(diabetes.DESCR)
-  ```
+  ```  
+
   ```
   Diabetes dataset
   ----------------
@@ -148,26 +159,33 @@ diabetes = datasets.load_diabetes()
   For more information see:
   Bradley Efron, Trevor Hastie, Iain Johnstone and Robert Tibshirani (2004) "Least Angle Regression," Annals of Statistics (with discussion), 407-499.
   (https://web.stanford.edu/~hastie/Papers/LARS/LeastAngle_2002.pdf)
-  ```
+  ```  
+
   - 데이터에 대한 소개를 볼 수 있는 key
   - 혈액정보가 포함되어있는 10개의 당뇨병과 관련된 변수
   - 각 변수는 442개 측정값
   - 종속변수는 1년 후의 병의 경과에 대한 양적인 측정값
-  - 각 변수는 평균중심화하고, 표준편차와 샘플 수의 곱으로 나누었음
+  - 각 변수는 평균중심화하고, 표준편차와 샘플 수의 곱으로 나누었음  
     - 평균은 0, 합은 1로 변형
 
-- feature_names
+- feature_names  
+
   ```python
   diabetes.feature_names
-  ```
-  - 각 독립변수(=피쳐)의 이름
+  ```  
 
-- data_filename, target_filename
+  - 각 독립변수(=피쳐)의 이름  
+
+- data_filename, target_filename  
+
   ```python
   print(diabetes.data_filename)
   print(diabetes.target_filename)
-  ```
+  ```  
+
   - 데이터파일 이름과, 타겟파일 이름
+
+<br><br>
 
 ### 데이터 준비
 
@@ -185,7 +203,8 @@ diabetes = datasets.load_diabetes()
 - df 정보
   ```python
   df.info()
-  ```
+  ```  
+
   ```
   <class 'pandas.core.frame.DataFrame'>
   RangeIndex: 442 entries, 0 to 441
@@ -205,7 +224,8 @@ diabetes = datasets.load_diabetes()
   10  target  442 non-null    float64
   dtypes: float64(11)
   memory usage: 38.1 KB
-  ```
+  ```  
+
   - 테이터타입은 판다스 데이터프레임
   - 442개 인덱스
   - 11개 컬럼
@@ -215,7 +235,6 @@ diabetes = datasets.load_diabetes()
   ```python
   df.describe()
   ```
-
 
   ||age |sex |bmi |bp |s1 |s2 |s3 |s4 |s5 |s6 |target |
   |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -233,7 +252,8 @@ diabetes = datasets.load_diabetes()
 
   ```python
   df.describe()
-  ```
+  ```  
+
   ||sum |
   |:---:|:---:|
   | age |-0.000 |
@@ -252,7 +272,8 @@ diabetes = datasets.load_diabetes()
 
   ```python
   df.isna().sum()
-  ```
+  ```  
+
   ||0 |
   |:---:|:---:|
   | age |0.000 |
@@ -272,7 +293,8 @@ diabetes = datasets.load_diabetes()
 
   ```python
   df.duplicated().sum()
-  ```
+  ```  
+
   - 중복값도 없다.
 
 - 상관관계
@@ -351,11 +373,16 @@ diabetes = datasets.load_diabetes()
   # 분석결과 저장
   file_name = 'sklearn_diabetes_scatterPlots'
   fig.savefig(path_results + file_name, dpi=150, facecolor='#eeeeee')
-  ```
+  ```  
+
   <div style="text-align : center;">
     <img alt="image" width="95%"
     src="https://lh3.googleusercontent.com/fife/AAbDypAssKrnCnSbF4uSrisVveDsEJ4RH4iG_20tHnJWzTyLOKTHqfI0xFQzc-omFyzhi2_RAnxvs5ur6WsEoO7mzFVI9MH_3XMb5VYzbadYGZ4aQB1_lNFP2x0ssnN9FK5Fa3RCxZn9SSaTISUL1XnDXmk9BXJPAjij-h3L9Q3mWDbl0k-B6rzggxV_l47NIoREppHCEJMNzMuGVxpFgXHnH8PaZFZS5HnfeEOGvGj12C8OrW8o2kRiSsrXbLvVeLgkXb8zDwn5rqmyt6s8XWZ2ZU1TW4Wj8FvFpWr7iISi3TKhKSPNfwdise1Bun18JIIoxgC1goCsj34wydqjofsuWW2NDL4M35mYt8MBgntgzXWwvY2_yX9N2EvY9nQkhj0pzV2D2uiM_-BpmJHWq3pkFIXIMqFlPZdjmsuGm8o7OGw8fCYD7kKYe6Sbe7O1v9TT_Qw3KrmaZATdLoMYRO9wKNPvo36ZL5_r2OPM1gvKCpcPaAMbooYKGtgItIgIq45ywaEpCesExXpoiGuqavZZIucUwa-gQndAcUgB3HOmS8nftSqMXJCUJVY7JeOObNlOJpv8e7YZwp_CoDEFIg8yahSW7F3zrSIzJ6IRlDo51WlizmKav-fcRIfkei37MdSS_2yUveuZ7sV469aqFiW7NhZVrLPsNP5N1SxsG8tynnGe_1y02zDGdsiPufWQDbGleTMtMbzS9w4z_qmUtRLvAPJ1eD0ehEOa_EEyB57RDDhA5snd85VQpfUXlGI_BKPg9B3-TiKhTUa7Bweoh322eAINjvqPSd0A-Bx6XZOY6Gf86esOAyic5tlc63cUT_LfKOd8E9EBU4tEEn9IU1iN_IPhKxBLYxiE_wdRPjCP_4HiOAXQn3iRVlFforfB7eddMMR_61NFWgmGTNT89II_B932CxI-suDvEc1Lm4WybuKiKGiwBQqIJvX_V3FvahUW9yvDHE9XqnAhS-lr4wcOrlA05jJFS4GjHa63TODBlNDW8fBr376p2Cb46gZreWswjvRja_j7QBRof1quo0s_VnYv-KT6c8DYSQ4_KCAs8IcGbBFNTizm3RpYqwZqJ3TW7EdZb4R9OqYdosv4ZHcrL7kjC26UX3IuYghahSfnQKcrGwkLqDNy_AOKq9MImCfANMIPoTW20Gr3iGNtzEnu5gw_mNmqVvKOGrbEb_2nVAX93k0ghqEPXdnUqRBVv_iEqbeQAbtwwiyUAjw9Kj3yrPvvziMCHVZIGgXbFKzFIuKH9YTlt4g3oboUEBUJ5qgtI0hAgg-UbMxSD9sH6RTH67Sh8UvEFNP3-ll8DK1dqaCJBkZoVo8xHt6RGoTiBip0svwycZ1ddz9ObkCKDVorXNTAkKnhBTLcfAQ35q11qMMFfk7II4CBPEB62_11CNL-ZYhz67ok1_n1YQH_OHKSV1lUuWqTxZbMMJ5tMtB-Tb2dTLNKT7j-z7OKajlGp9YRgXpj0QYow-QZsvRCduPRqRz4ToJdDFB5yWG1r6OgOZfqnNirPd8wLy0iG4hB=w1200-h865">  
   </div>  
+
+
+
+
 
 
 
