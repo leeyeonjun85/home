@@ -14,7 +14,9 @@ last_modified_at: 2022-11-02
 
 # 저를 소개합니다
 
-![image](/assets/images/profile/me01.jpg){: .align-center width="40%"}
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/profile/me01.jpg){: .align-center width="40%"}
+![image](../assets/images/profile/me01.jpg){: .align-center width="40%"}
+
 
 ## Skill
 - LANGUAGE
