@@ -223,8 +223,8 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+paginate: 9 # amount of posts to show
+paginate_path: /recent/page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
@@ -258,6 +258,9 @@ whitelist:
 category_archive:
   type: liquid
   path: /categories/
+category_dev:
+  type: liquid
+  path: /categories-dev/
 tag_archive:
   type: liquid
   path: /tags/
@@ -291,19 +294,21 @@ defaults:
     values:
       layout: single
 
-      author_profile: false
+      # 왼쪽 사이드바
+      author_profile: true
 
+      # 오른쪽 사이드바
       toc: true
       toc_sticky: true
       toc_label: "MENU"
 
+      # 기타사항
       read_time: true
       comments: true
       share: true
       related: true
       show_date: true
       date_format: "%Y-%m-%d"
-      read_time: true
       words_per_minute: 250
 
   # _recipes
@@ -329,17 +334,25 @@ defaults:
       path: ""
       type: Life
     values:
-      layout: splash
-      # classes:
-      #   - landing
-      #   - dark-theme
+      layout: single
+      classes: wide
 
-      # author_profile: true
+      # 왼쪽 사이드바
+      author_profile: true
+
+      # 오른쪽 사이드바
+      toc: false
+      toc_sticky: false
+      toc_label: "MENU"
+
+      # 기타 설정
+      comments: true
       share: true
-      comment: true
-      # toc: false
-      # toc_sticky: false
-      # toc_label: "MENU"
+      related: true
+      show_date: true
+      date_format: "%Y-%m-%d"
+      words_per_minute: 250
+
   # _portfolio
   - scope:
       path: ""
