@@ -19,7 +19,7 @@ last_modified_at: 2023-02-10
 - 날짜 : 2023년 2월 5일 (일)
 
 
-![image-right](/assets/images/life/life_teaser.jpg){: .align-center width="400" height="200"}
+![image-right](/assets/images/etc/life_teaser.jpg){: .align-center width="400" height="200"}
 
 
 
