@@ -30,12 +30,12 @@ last_modified_at: 2022-10-30
 은행나무 구경하러 와이프와 함께 아산 은행나무길로 향했다.  
 
 ### 붕어빵 먹으면서 은행나무길 산책하기
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/20221030 (1).jpg){: .align-center width="30%"}
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/20221030 (1).jpg){: .align-center width="40%"}
 
 ### 사랑하는 아내와 함께
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/20221030 (2).jpg){: .align-center width="30%"}
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/20221030 (3).jpg){: .align-center width="30%"}
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/20221030 (4).jpg){: .align-center width="50%"}
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/20221030 (2).jpg){: .align-center width="40%"}
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/20221030 (3).jpg){: .align-center width="40%"}
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/20221030 (4).jpg){: .align-center width="60%"}
 ![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/20221030 (5).jpg){: .align-center width="80%"}
 
 
