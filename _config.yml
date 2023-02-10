@@ -358,3 +358,12 @@ collections:
   # Food:
   #   output: true
   #   permalink: /:collection/:path/
+
+
+
+
+
+
+
+# gem install bundler
+# bundle exec jekyll serve
