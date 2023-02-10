@@ -1,5 +1,5 @@
 ---
-title: "아산 은행나무길 산책"
+title: "2022-10-30 아산 은행나무길 산책"
 
 header:
   teaser: /assets/images/life/2022-10-30-asan-yellowroad/KakaoTalk_20221103_143847596.jpg
