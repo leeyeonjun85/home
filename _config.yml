@@ -289,22 +289,22 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      layout: posts
 
-      show_date: true
-      date_format: "%Y-%m-%d"
-
-      read_time: true
-      words_per_minute: 250
+      author_profile: false
 
       toc: true
       toc_sticky: true
       toc_label: "MENU"
+
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      show_date: true
+      date_format: "%Y-%m-%d"
+      read_time: true
+      words_per_minute: 250
 
   # _recipes
   - scope:
@@ -329,13 +329,17 @@ defaults:
       path: ""
       type: Life
     values:
-      layout: single
-      author_profile: true
+      layout: splash
+      # classes:
+      #   - landing
+      #   - dark-theme
+
+      # author_profile: true
       share: true
       comment: true
-      toc: true
-      toc_sticky: true
-      toc_label: "MENU"
+      # toc: false
+      # toc_sticky: false
+      # toc_label: "MENU"
   # _portfolio
   - scope:
       path: ""
