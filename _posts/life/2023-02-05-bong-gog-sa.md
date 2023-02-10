@@ -34,13 +34,13 @@ last_modified_at: 2023-02-10
 
 ## 기도하러 종종 찾는 삼성각  
 
-![image-right](../../assets/images/life/IMG_6519.JPG){: .align-center width="60%"}
+![image-right](../../assets/images/diary/IMG_6519.JPG){: .align-center width="60%"}
 
 봉곡사 삼성각은 소원을 기도하며 조용히 기도할 수 있는 작은 암자다.  
 
 ## 봉곡사의 마스코트 '망고'  
 
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/life/IMG_6520.jpg){: .align-center width="60%"}
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/IMG_6520.jpg){: .align-center width="60%"}
 
 봉곡사의 터줏대감 '망고'님이 주무시고 계시기 때문에 조용히 기도해야 한다.🤫
 
