@@ -367,15 +367,15 @@ defaults:
 
 # collections
 collections:
-  # ETC:
-  #   output: true
-  #   permalink: /:collection/:path/
+  ETC:
+    output: true
+    permalink: /:collection/:path/
   Life:
     output: true
     permalink: /:collection/:path/
-  # Food:
-  #   output: true
-  #   permalink: /:collection/:path/
+  Food:
+    output: true
+    permalink: /:collection/:path/
 
 
 
