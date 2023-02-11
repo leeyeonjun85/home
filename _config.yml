@@ -330,6 +330,14 @@ defaults:
       author_profile: true
       share: true
       comment: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
   # _Life
   - scope:
       path: ""
@@ -354,31 +362,20 @@ defaults:
       date_format: "%Y-%m-%d"
       words_per_minute: 250
 
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      
 
 
-# collections
+
+# Collections
 collections:
-  ETC:
+  recipes:
     output: true
     permalink: /:collection/:path/
-  Life:
+  pets:
     output: true
     permalink: /:collection/:path/
-  Food:
+  portfolio:
     output: true
     permalink: /:collection/:path/
-
-
-
 
 
 
