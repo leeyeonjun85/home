@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default"
+minimal_mistakes_skin    : "air"
 # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -303,13 +303,14 @@ defaults:
       toc_label: "MENU"
 
       # 기타사항
-      read_time: true
+      use_math: true
+      # read_time: true
       comments: true
       share: true
       related: true
       show_date: true
       date_format: "%Y-%m-%d"
-      words_per_minute: 250
+      # words_per_minute: 250
 
   # _recipes
   - scope:
