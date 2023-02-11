@@ -34,7 +34,7 @@ last_modified_at: 2023-02-10
 
 ## 기도하러 종종 찾는 삼성각  
  
-![image-right](../../assets/images/diary/bonggogsa_2.JPG){: .align-center width="60%"}
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/bonggogsa_2.jpg){: .align-center width="60%"}
 
 봉곡사 삼성각은 소원을 기도하며 조용히 기도할 수 있는 작은 암자다.  
 
