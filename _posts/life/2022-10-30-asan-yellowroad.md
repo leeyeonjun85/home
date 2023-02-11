@@ -37,7 +37,7 @@ last_modified_at: 2022-10-30
 ![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/20221030 (3).jpg){: .align-center width="40%"}
 ![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/20221030 (4).jpg){: .align-center width="60%"}
 ![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/20221030 (5).jpg){: .align-center width="80%"}
-
+ 
 
 
 
