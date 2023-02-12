@@ -1,6 +1,6 @@
 ---
 title: "Kaggle Titanic"
-excerpt: "나무모델 기반 분류문제"
+excerpt: "나무기반 모델의 분류문제"
 
 categories:
   - Dev Log
@@ -52,7 +52,7 @@ last_modified_at: 2023-02-12
 
 ### Decision Tree
 - 라이브러리 : [sklearn.tree.DecisionTreeClassifier()](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html#sklearn.tree.DecisionTreeClassifier)
-- 나무기반 모델의 기반이 되는 모델
+- 나무기반 모델의 기초가 되는 모델
 
 ### Random Forest
 - 라이브러리 : [sklearn.ensemble.RandomForestClassifier()](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
