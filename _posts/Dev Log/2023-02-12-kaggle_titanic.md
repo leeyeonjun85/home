@@ -497,6 +497,9 @@ print(f'✅ Best Score  : {xg_gridCV.best_score_}')
 
 - 세 모델 모두 타겟을 추정하여 캐글에 제출하였다.
 
+![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/result.png){: .align-center width="90%"}
+
+
 ### 최종 점수
 
 - Decision Tree = 0.75837
@@ -507,6 +510,9 @@ print(f'✅ Best Score  : {xg_gridCV.best_score_}')
 
 - Random Forest와 XGBoost는 아직 과적합이 많이 남아있는 모습이다.
 - 베이지안서치 등으로 하이퍼파라미터 튜닝을 더 시도해 보면 점수를 올릴 수 있을 것 같다.
+
+
+
 
 
 <br>
