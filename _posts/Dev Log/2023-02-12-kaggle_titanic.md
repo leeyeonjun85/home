@@ -516,7 +516,7 @@ print(f'✅ Best Score  : {xg_gridCV.best_score_}')
 
 
 <center>
-<h1>부족한 글 끝까지 읽어주셔서 감사합니다😉</h1>
+<h1>끝까지 읽어주셔서 감사합니다😉</h1>
 </center>
 
 
