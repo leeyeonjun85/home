@@ -12,19 +12,23 @@ share: true
 last_modified_at: 2022-11-02
 ---
 
-# 저를 소개합니다
-
 ![image]({{ site.url }}{{ site.baseurl }}/assets/images/profile/me01.jpg){: .align-center width="40%"}
+
+
+# 저를 소개합니다
 
 ## Skill
 - LANGUAGE
   - Python, Javascript
 
+- Data Science
+  - Pandas, scikit-learn
+
 - Data Base
   - MongoDB, MySQL, Firebase
 
 ## Jango Framework Homepage
-- 회원관리를 위한 '[오투공부방](http://leeyj85.shop/o2study/)' 페이지 제작
+- 회원관리를 위한 '[오투공부방](http://leeyj85.shop/o2study/)' 홈페이지 제작
 - 회원 출결 시스템, 공지사항, 질문게시판, 회원 포인트시스템 운영
 
 
