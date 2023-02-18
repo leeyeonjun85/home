@@ -21,9 +21,11 @@ last_modified_at: 2023-02-19
 
 <br><br>
 
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/etc/fashion-902657_1920.jpg){: .align-center width="80%"}  
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/etc/fashion-902657_1920.jpg){: .align-center width="70%"}  
 
-<br><br><br><br>
+<br><br>
+
+<br><br>
 
 # Fashion MNIST, 인공신경망 구성  
 
@@ -37,7 +39,7 @@ last_modified_at: 2023-02-19
 <br><br>
 
 
-## 데이터 준비
+## 데이터 준비  
 
 ### 데이터 읽어오기  
 

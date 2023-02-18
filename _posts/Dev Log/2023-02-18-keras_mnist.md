@@ -1,6 +1,6 @@
 ---
-title: "keras mnist"
-excerpt: "mnist, 인공신경망 구성하기"
+title: "Neural Network : MNIST"
+excerpt: "MNIST, 인공신경망 구성하기"
 
 categories:
   - Dev Log
@@ -14,49 +14,31 @@ tags:
 use_math: true
 
 header:
-  teaser: /assets/images/aib/matrix-1027571_1920.jpg
+  teaser: /assets/images/aib/artificial-intelligence-3685928_1920.png
 
 last_modified_at: 2023-02-18
 ---
 
-<br>
-<br>
-<br>
-<br>
+<br><br>
 
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/etc/woman-936722_1920.jpg){: .align-center width="70%"}  
 
-![image](https://leeyeonjun85.github.io/home/assets/images/aib/artificial-intelligence-3685928_1920.png){: .align-center width="70%"}  
+<br><br>
 
+<br><br>
 
+# keras mnist, 인공신경망 구성  
 
-<br>
-<br>
-<br>
-<br>
+<br><br>
 
-
-# keras mnist, 인공신경망 구성
-
-
-<br>
-<br>
-<br>
-<br>
-
-## 도입
->- mnist 데이터로 인공신경망 만들기
+## 도입  
+>- mnist 데이터로 인공신경망 만들기  
 >- 간단한 인공신경망을 구성하며 딥러닝과 친해지자  
 
+<br><br>
 
 
-
-<br>
-<br>
-<br>
-<br>
-
-
-## 데이터 준비
+## 데이터 준비  
 
 ### 데이터 읽어오기  
 
