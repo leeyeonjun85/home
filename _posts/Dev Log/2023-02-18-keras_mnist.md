@@ -1,6 +1,6 @@
 ---
-title: "Neural Network : Fashion MNIST"
-excerpt: "Fashion MNIST, 인공신경망 구성하기"
+title: "Neural Network : MNIST"
+excerpt: "MNIST, 인공신경망 구성하기"
 
 categories:
   - Dev Log
@@ -104,7 +104,9 @@ x_train[attention_idx][10] # 2,000번 인덱스 살펴보기
 ```
 
 - 데이터를 255로 나누어 0~1사이의 수로 정규화(Normalization)한다.
-- 정규화 하면 딥러닝 학습에 소요되는 리소스가 절약되는 이점이 있다.
+- 정규화 하는 이유?
+  - 0~1 사이로 맞추어 계산 값이 너무 커지는 것을 방지
+  - Local Minimun에 빠지는 것을 방지(학습 속도 향상)
 
 
 
