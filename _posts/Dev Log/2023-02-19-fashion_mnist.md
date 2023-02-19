@@ -1,6 +1,6 @@
 ---
-title: "Neural Network : Fashion MNIST"
-excerpt: "Fashion MNIST, 인공신경망 구성하기"
+title: "Fashion MNIST 인공신경망"
+excerpt: "Fashion MNIST로 인공신경망 구성하기"
 
 categories:
   - Dev Log
