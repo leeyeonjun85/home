@@ -296,7 +296,7 @@ plt.show()
 
 #### 혼돈행렬(Confusion Matrix)  
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/f_mnist/f_mnist_cm.png){: .align-center width="70%"} 
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/f_mnist/f_mnist_cm.png){: .align-center width="70%"}  
 
 
 
