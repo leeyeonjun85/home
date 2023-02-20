@@ -448,10 +448,33 @@ plt.show()
 
 <br>
 
-### ### 학습률 Cosine Decay
+### 학습률 Cosine Decay
 
+- 학습률 Cosine Decay 는 코사인의 형태로 학습률을 감소시킨다.
+- Step Decay처럼 급격하게 학습률이 변하는 것이 아니라 코사인 곡선을 그리며 학습률이 미세하게 감소하도록 할 수 있다.
+- Train Accuracy : 0.913, Test Accuracy : 0.971
 
+```python
+first_decay_steps = 1000
+initial_learning_rate = 0.2
 
+# Cosine Learning Rate Decay
+cos_decay = (
+  tf.keras.experimental.CosineDecayRestarts(
+      initial_learning_rate,
+      first_decay_steps)
+  )
+
+model = get_model(lr=cos_decay)
+
+model_results = model.fit(x_train, y_train
+                          , batch_size              = 16 # None
+                          , epochs                  = 10 # 1
+                          , verbose                 = 0 # 'auto'
+                          )
+
+model_accuracy = print_accuracy(model, verbose=1)
+```
 
 
 <br><br>
@@ -459,25 +482,492 @@ plt.show()
 
 ## 과적합 방지
 
+### 가중치 감소(Weight Decay)
+
+- 가중치 감소를 위한 정규화는 L1 Regularization(LASSO), L2 Regularization(Ridge)의 두 가지가 있다.
+- kernel_regularizer, activity_regularizer의 차이는 아직 모르겠다.
+- Train Accuracy : 0.993, Test Accuracy : 0.957
+- 점수가 잘 나오니 일단 사용하자...😳
+
+```python
+first_decay_steps = 1000
+initial_learning_rate = 0.2
+
+# Cosine Learning Rate Decay
+cos_decay = (
+  tf.keras.experimental.CosineDecayRestarts(
+      initial_learning_rate,
+      first_decay_steps)
+  )
+
+model = tf.keras.Sequential([
+                            Dense(100
+                                  , activation='relu'
+                                  , kernel_initializer='he_uniform'
+                                  , kernel_regularizer=L1(0.01)
+                                  , activity_regularizer=L2(0.01)
+                                  ),
+                            Dense(100
+                                  , activation='relu'
+                                  , kernel_initializer='he_uniform'
+                                  , kernel_regularizer=L2(0.01)
+                                  , activity_regularizer=L1(0.01)
+                                  ),
+                            Dense(3, activation='softmax'),
+                            ])
+
+model.compile(metrics=['accuracy']
+              , optimizer=tf.keras.optimizers.Adam(learning_rate=0.001)
+              , loss='sparse_categorical_crossentropy'
+              )
+
+model_results = model.fit(x_train, y_train
+                          , batch_size              = 16 # None
+                          , epochs                  = 10 # 1
+                          , verbose                 = 0 # 'auto'
+                          )
+
+model_accuracy = print_accuracy(model, verbose=1)
+```
+
+<br>
+
+### Dropout
+
+- 은닉층의 일부 노드를 학습에 사용하지 않도록하여 과적합을 방지하는 방법이다.
+- 은닉층 뒤에 Dropout(0.5) 메써드를 추가하여 설정할 수 있다.
+- Train Accuracy : 0.975, Test Accuracy : 0.957
+
+```python
+first_decay_steps = 1000
+initial_learning_rate = 0.2
+
+# Cosine Learning Rate Decay
+cos_decay = (
+  tf.keras.experimental.CosineDecayRestarts(
+      initial_learning_rate,
+      first_decay_steps)
+  )
+
+model = tf.keras.Sequential([
+                            Dense(100
+                                  , activation='relu'
+                                  , kernel_initializer='he_uniform'
+                                  , kernel_regularizer=L1(0.01)
+                                  , activity_regularizer=L2(0.01)
+                                  ),
+                            Dense(100
+                                  , activation='relu'
+                                  , kernel_initializer='he_uniform'
+                                  , kernel_regularizer=L2(0.01)
+                                  , activity_regularizer=L1(0.01)
+                                  ),
+                            Dropout(0.5),
+                            Dense(3, activation='softmax'),
+                            ])
+
+model.compile(metrics=['accuracy']
+              , optimizer=tf.keras.optimizers.Adam(learning_rate=0.001)
+              , loss='sparse_categorical_crossentropy'
+              )
+
+model_results = model.fit(x_train, y_train
+                          , batch_size              = 16 # None
+                          , epochs                  = 10 # 1
+                          , verbose                 = 0 # 'auto'
+                          )
+
+model_accuracy = print_accuracy(model, verbose=1)
+```
+
+<br>
+
+### Early Stopping
+
+- 과정합이 심해지기 전에 학습을 멈추도록 설정
+
+```python
+first_decay_steps = 1000
+initial_learning_rate = 0.2
+
+# Cosine Learning Rate Decay
+cos_decay = (
+  tf.keras.experimental.CosineDecayRestarts(
+      initial_learning_rate,
+      first_decay_steps)
+  )
+
+# Early Stopping
+early_stop = keras.callbacks.EarlyStopping(monitor='val_accuracy', min_delta=0, patience=3, verbose=1)
+
+model = tf.keras.Sequential([
+                            Dense(100
+                                  , activation='relu'
+                                  , kernel_initializer='he_uniform'
+                                  , kernel_regularizer=L1(0.01)
+                                  , activity_regularizer=L2(0.01)
+                                  ),
+                            Dense(100
+                                  , activation='relu'
+                                  , kernel_initializer='he_uniform'
+                                  , kernel_regularizer=L2(0.01)
+                                  , activity_regularizer=L1(0.01)
+                                  ),
+                            Dropout(0.5),
+                            Dense(3, activation='softmax'),
+                            ])
+
+model.compile(metrics=['accuracy']
+              , optimizer=tf.keras.optimizers.Adam(learning_rate=0.001)
+              , loss='sparse_categorical_crossentropy'
+              )
+
+model_results = model.fit(x_train, y_train, validation_data=(x_test, y_test)
+                          , batch_size        = 16 # None
+                          , epochs            = 20 # 1
+                          , verbose           = 1 # 'auto'
+                          , callbacks         = [early_stop]
+                          )
+
+model_accuracy = print_accuracy(model, verbose=1)
+```
+
+- 다음과 같이 11번째 epoch에서 과적합이 발생해 학습이 중단되었다
+- Train Accuracy : 0.982, Test Accuracy : 0.957
+
+```
+Epoch 1/20
+18/18 [==============================] - 1s 17ms/step - loss: 6.1275 - accuracy: 0.6509 - val_loss: 5.5955 - val_accuracy: 0.7681
+Epoch 2/20
+18/18 [==============================] - 0s 6ms/step - loss: 5.4336 - accuracy: 0.7891 - val_loss: 5.1008 - val_accuracy: 0.8551
+Epoch 3/20
+18/18 [==============================] - 0s 6ms/step - loss: 4.9484 - accuracy: 0.8691 - val_loss: 4.7225 - val_accuracy: 0.8551
+Epoch 4/20
+18/18 [==============================] - 0s 5ms/step - loss: 4.5982 - accuracy: 0.8764 - val_loss: 4.4008 - val_accuracy: 0.8986
+Epoch 5/20
+18/18 [==============================] - 0s 5ms/step - loss: 4.3068 - accuracy: 0.8945 - val_loss: 4.1185 - val_accuracy: 0.9420
+Epoch 6/20
+18/18 [==============================] - 0s 5ms/step - loss: 4.0102 - accuracy: 0.9273 - val_loss: 3.8753 - val_accuracy: 0.9420
+Epoch 7/20
+18/18 [==============================] - 0s 6ms/step - loss: 3.7918 - accuracy: 0.9564 - val_loss: 3.6620 - val_accuracy: 0.9420
+Epoch 8/20
+18/18 [==============================] - 0s 6ms/step - loss: 3.5845 - accuracy: 0.9600 - val_loss: 3.4688 - val_accuracy: 0.9565
+Epoch 9/20
+18/18 [==============================] - 0s 6ms/step - loss: 3.4150 - accuracy: 0.9564 - val_loss: 3.2923 - val_accuracy: 0.9565
+Epoch 10/20
+18/18 [==============================] - 0s 6ms/step - loss: 3.2399 - accuracy: 0.9673 - val_loss: 3.1362 - val_accuracy: 0.9565
+Epoch 11/20
+18/18 [==============================] - 0s 7ms/step - loss: 3.0894 - accuracy: 0.9709 - val_loss: 2.9861 - val_accuracy: 0.9565
+Epoch 11: early stopping
+```
+
 
 <br><br>
 
 
 ## 하이퍼파라미터 튜닝
 
+- 하이퍼파라미터를 하나씩 실험해보는 것은 시간이 오래걸린다.
+- 그래서 Grid Search, Random Search 가 자주 사용된다.
+- Keras Tuner 는 하이퍼파라미터를 찾는데 도움이 되는 라이브러리다.
+- 먼저 하이퍼파라미터 튜닝을 위하여 지금까지의 실험을 통하여 적절한 모델을 만드는 함수를 정의하자
+
+```python
+def get_model(nodes=100, lr=0.001, kernel_l1=0.01, kernel_l2=0.01, activity_l1=0.01, activity_l2=0.01, dropout=0.5):
+    random.seed(rand_seed)
+    model = tf.keras.Sequential([
+                        Dense(nodes
+                                , activation='relu'
+                                , kernel_initializer='he_uniform'
+                                , kernel_regularizer=L1(kernel_l1)
+                                , activity_regularizer=L2(activity_l2)
+                                , input_dim=x_train.shape[1]
+                                ),
+                        Dense(nodes
+                                , activation='relu'
+                                , kernel_initializer='he_uniform'
+                                , kernel_regularizer=L2(kernel_l2)
+                                , activity_regularizer=L1(activity_l1)
+                                ),
+                        Dropout(dropout),
+                        Dense(3, activation='softmax'),
+                                ])
+
+    model.compile(metrics=['accuracy']
+                  , optimizer=keras.optimizers.Adam(learning_rate=lr)
+                  , loss='sparse_categorical_crossentropy'
+                  )
+    
+    return model
+```
+
+<br>
+
+### Random Search
+
+- Random Search 는 지정된 범위 안에서 지정된 횟수만큼 랜덤한 조합으로 학습을 수행한다.
+- 처음 접하는 데이터, 넓은 하이퍼파라미터의 범위에 대하여 학습할 때 사용된다.
+
+```python
+verbose = 0
+model = KerasClassifier(model=get_model, verbose=verbose)
+
+# Make Params
+params = {
+    "optimizer__learning_rate"          : uniform(loc=0.001, scale=0.01),
+    "batch_size"                        : range(2, 16),
+    "epochs"                            : range(6, 15),
+}
+
+randomized_search = RandomizedSearchCV(
+                    model,
+                    param_distributions   = params,
+                    scoring               = "accuracy",
+                    n_iter                = 10,
+                    cv                    = 3,
+                    verbose               = verbose,
+                    random_state          = rand_seed,
+                    )
+
+randomized_search.fit(x_train, y_train, validation_data=(x_test, y_test)
+                      , verbose     = verbose
+                      , epochs      = 10
+                      , batch_size  = 4
+                      , callbacks=[early_stop]
+                      )
+```
+
+```
+최적 하이퍼파라미터 : {'batch_size': 8, 'epochs': 8, 'optimizer__learning_rate': 0.005731505218679044}
+최적 정확도         : 0.9964
+
+Best: 0.9963768115942028 using {'batch_size': 8, 'epochs': 8, 'optimizer__learning_rate': 0.005731505218679044}
+Means: 0.974 / {'batch_size': 4, 'epochs': 13, 'optimizer__learning_rate': 0.007837875830710724}
+Means: 0.989 / {'batch_size': 2, 'epochs': 6, 'optimizer__learning_rate': 0.008771304344664}
+Means: 0.971 / {'batch_size': 14, 'epochs': 10, 'optimizer__learning_rate': 0.0048673606674801756}
+Means: 0.982 / {'batch_size': 2, 'epochs': 11, 'optimizer__learning_rate': 0.0038254051509577884}
+Means: 0.996 / {'batch_size': 8, 'epochs': 8, 'optimizer__learning_rate': 0.005731505218679044}
+Means: 0.978 / {'batch_size': 7, 'epochs': 6, 'optimizer__learning_rate': 0.0045319254935582785}
+Means: 0.985 / {'batch_size': 11, 'epochs': 11, 'optimizer__learning_rate': 0.004820023120561529}
+Means: 0.982 / {'batch_size': 6, 'epochs': 12, 'optimizer__learning_rate': 0.003425228681016678}
+Means: 0.978 / {'batch_size': 4, 'epochs': 12, 'optimizer__learning_rate': 0.007947590052146253}
+Means: 0.993 / {'batch_size': 10, 'epochs': 8, 'optimizer__learning_rate': 0.007231445127707466}
+```
+
+|    |   mean_test_score |   param_batch_size |   param_epochs |   param_optimizer__learning_rate |
+|---:|------------------:|-------------------:|---------------:|---------------------------------:|
+|  4 |          0.996377 |                  8 |              8 |                       0.00573151 |
+|  9 |          0.992714 |                 10 |              8 |                       0.00723145 |
+|  1 |          0.989051 |                  2 |              6 |                       0.0087713  |
+|  6 |          0.985428 |                 11 |             11 |                       0.00482002 |
+|  3 |          0.981725 |                  2 |             11 |                       0.00382541 |
+|  7 |          0.981725 |                  6 |             12 |                       0.00342523 |
+|  8 |          0.978141 |                  4 |             12 |                       0.00794759 |
+|  5 |          0.978102 |                  7 |              6 |                       0.00453193 |
+|  0 |          0.974439 |                  4 |             13 |                       0.00783788 |
+|  2 |          0.970815 |                 14 |             10 |                       0.00486736 |
+
+```
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_93 (Dense)            (None, 100)               700       
+                                                                 
+ dense_94 (Dense)            (None, 100)               10100     
+                                                                 
+ dropout_31 (Dropout)        (None, 100)               0         
+                                                                 
+ dense_95 (Dense)            (None, 3)                 303       
+                                                                 
+=================================================================
+Total params: 11,103
+Trainable params: 11,103
+Non-trainable params: 0
+```
+
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/randomized_search_CM.png){: .align-center width="60%"}  
+
+<br>
+
+### Grid Search
+
+- Grid Search는 지정된 범위의 모든 조합에 대하여 모델을 학습한다.
+- 하이퍼파라미터의 범위가 넓으면 조합이 많아지고, 학습시간이 오래걸린다.
+- 그래서 좁은 범위의 미세한 조정이 필요할때 Grid Search가 사용될 수 있다.
+
+```python
+verbose = 0
+model = KerasClassifier(model=get_model, verbose=verbose)
+
+# Make Params
+params = {
+    "optimizer__learning_rate"          : [0.001, 0.005],
+    "batch_size"                        : [10, 16],
+    "epochs"                            : [10, 12],
+}
+
+grid_search = GridSearchCV(
+              model,
+              param_grid            = params,
+              scoring               = "accuracy",
+              cv                    = 3,
+              verbose               = verbose,
+              )
+
+grid_search.fit(x_train, y_train, validation_data=(x_test, y_test)
+                , verbose     = verbose
+                , epochs      = 10
+                , batch_size  = 4
+                , callbacks=[early_stop]
+                )
+```
+
+```
+최적 하이퍼파라미터 : {'batch_size': 16, 'epochs': 12, 'optimizer__learning_rate': 0.001}
+최적 정확도         : 0.9927
+
+Best: 0.9927138079311991 using {'batch_size': 16, 'epochs': 12, 'optimizer__learning_rate': 0.001}
+Means: 0.978 / {'batch_size': 10, 'epochs': 10, 'optimizer__learning_rate': 0.001}
+Means: 0.978 / {'batch_size': 10, 'epochs': 10, 'optimizer__learning_rate': 0.005}
+Means: 0.978 / {'batch_size': 10, 'epochs': 12, 'optimizer__learning_rate': 0.001}
+Means: 0.985 / {'batch_size': 10, 'epochs': 12, 'optimizer__learning_rate': 0.005}
+Means: 0.985 / {'batch_size': 16, 'epochs': 10, 'optimizer__learning_rate': 0.001}
+Means: 0.982 / {'batch_size': 16, 'epochs': 10, 'optimizer__learning_rate': 0.005}
+Means: 0.993 / {'batch_size': 16, 'epochs': 12, 'optimizer__learning_rate': 0.001}
+Means: 0.974 / {'batch_size': 16, 'epochs': 12, 'optimizer__learning_rate': 0.005}
+```
+
+|    |   mean_test_score |   param_batch_size |   param_epochs |   param_optimizer__learning_rate |
+|---:|------------------:|-------------------:|---------------:|---------------------------------:|
+|  6 |          0.992714 |                 16 |             12 |                            0.001 |
+|  3 |          0.985467 |                 10 |             12 |                            0.005 |
+|  4 |          0.985428 |                 16 |             10 |                            0.001 |
+|  5 |          0.981725 |                 16 |             10 |                            0.005 |
+|  0 |          0.978102 |                 10 |             10 |                            0.001 |
+|  2 |          0.978102 |                 10 |             12 |                            0.001 |
+|  1 |          0.978062 |                 10 |             10 |                            0.005 |
+|  7 |          0.974478 |                 16 |             12 |                            0.005 |
+
+```
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_171 (Dense)           (None, 100)               700       
+                                                                 
+ dense_172 (Dense)           (None, 100)               10100     
+                                                                 
+ dropout_57 (Dropout)        (None, 100)               0         
+                                                                 
+ dense_173 (Dense)           (None, 3)                 303       
+                                                                 
+=================================================================
+Total params: 11,103
+Trainable params: 11,103
+Non-trainable params: 0
+```
+
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/grid_search_CM.png){: .align-center width="60%"}  
+
+<br>
+
+### Keras Tuner
+
+- Keras 라이브러리는 하이퍼파라미터를 튜닝하는데 도움이 되는 Keras Tuner 를 제공한다.
+- 자세한 내용은 [Keras Tuner 공식문서](https://www.tensorflow.org/tutorials/keras/keras_tuner?hl=ko) 참조
 
 
+```python
+def kt_model(hp):
+    random.seed(rand_seed)
+
+    # Cosine Learning Rate Decay
+    cos_decay = (
+      tf.keras.experimental.CosineDecayRestarts(
+          initial_learning_rate,
+          first_decay_steps)
+      )
+
+    hp_units = hp.Int('units', min_value = 16, max_value = 256, step = 16)
+    hp_dropout = hp.Choice('rate', values = [2e-1, 4e-1, 6e-1])
+
+    model = tf.keras.Sequential([
+                        Dense(units = hp_units
+                                , activation='relu'
+                                , kernel_initializer='he_uniform'
+                                , kernel_regularizer=L1(0.01)
+                                , activity_regularizer=L2(0.01)
+                                , input_dim=x_train.shape[1]
+                                ),
+                        Dense(units = hp_units
+                                , activation='relu'
+                                , kernel_initializer='he_uniform'
+                                , kernel_regularizer=L2(0.01)
+                                , activity_regularizer=L1(0.01)
+                                ),
+                        Dropout(rate=hp_dropout),
+                        Dense(3, activation='softmax'),
+                                ])
+
+    model.compile(metrics=['accuracy']
+                  , optimizer=keras.optimizers.Adam(learning_rate=cos_decay)
+                  , loss='sparse_categorical_crossentropy'
+                  )
+    
+    return model
+
+tuner = kt.Hyperband(kt_model,
+                     objective = 'val_accuracy',
+                     max_epochs = 10,
+                     factor = 3,
+                     directory = 'my_dir',
+                     project_name = 'intro_to_kt')
+
+class ClearTrainingOutput(tf.keras.callbacks.Callback):
+  def on_train_end(*args, **kwargs):
+    IPython.display.clear_output(wait = True)
+
+tuner.search(x_train, y_train, validation_data = (x_test, y_test)
+             , epochs = 10
+             , callbacks = [ClearTrainingOutput()]
+             )
+
+best_hps = tuner.get_best_hyperparameters(num_trials = 1)[0]
+```
 
 
+```
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_6 (Dense)             (None, 100)               700       
+                                                                 
+ dense_7 (Dense)             (None, 100)               10100     
+                                                                 
+ dropout_2 (Dropout)         (None, 100)               0         
+                                                                 
+ dense_8 (Dense)             (None, 3)                 303       
+                                                                 
+=================================================================
+Total params: 11,103
+Trainable params: 11,103
+Non-trainable params: 0
+```
+
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/keras_tuner_CM.png){: .align-center width="60%"} 
 
 
+<br><br>
 
 
+## 결론
+
+>- 인공신경망으로 기준모델인 로지스틱 회귀모델 만큼은 나온것 같다.
+>- 데이터가 작고, 단순하면 그냥 로지스틱 회귀모델로도 충분하다.
+>- 복잡한 데이터로 인공신경망을 구성하면 효과가 클 것 같다.  
+>- 닭잡는데 소잡는 칼 쓰지말자
 
 
-
-
-
+![image](http://www.troot.co.kr/tech/kalkal.jpg){: .align-center width="60%"} 
 
 
 
