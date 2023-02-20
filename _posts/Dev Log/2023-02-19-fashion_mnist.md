@@ -169,7 +169,7 @@ plt.show()
 model = tf.keras.Sequential([
     tf.keras.layers.Flatten(input_shape=(28, 28)),
     tf.keras.layers.Dense(128, activation='relu'),
-    tf.keras.layers.Dense(10)
+    tf.keras.layers.Dense(10, activation='softmax')
 ])
 
 model.compile(optimizer='adam',
@@ -271,7 +271,7 @@ plt.show()
 
 - 틀렸다...😥
 
-#### 평가 인덱스 0~14번, 모델 추정  
+#### 평가데이터 15개 추정  
 
 ```python
 num_rows = 5
@@ -291,7 +291,7 @@ plt.show()
 
 ![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/f_mnist/f_mnist_test15s.png){: .align-center width="70%"} 
 
-- 모델이 대부분 맞혔다(파란색)
+- 모델이 대부분 맞혔는데(파란색), 틀린것(빨간색)도 있다
 
 
 #### 혼돈행렬(Confusion Matrix)  
