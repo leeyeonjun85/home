@@ -148,7 +148,7 @@ log_CM, fig = draw_CM(log_model)
 # Train Accuracy : 0.978, Test Accuracy : 0.971
 ```
 
-- 기본모델 정확도가 무려 97.1% 😳 (큰일이다...)
+- 기준모델 정확도가 무려 97.1% 😳 (큰일이다...)
 - 보통은 기준모델 이상을 목표로 하지만 오늘은 기준모델 만큼이라도 달성하는 것을 목표로 하자
 
 ![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/logit_cm.png){: .align-center width="60%"}  
