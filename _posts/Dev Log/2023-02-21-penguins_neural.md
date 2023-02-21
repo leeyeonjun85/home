@@ -966,8 +966,10 @@ Non-trainable params: 0
 >- 복잡한 데이터로 인공신경망을 구성하면 효과가 클 것 같다.  
 >- 닭잡는데 소잡는 칼 쓰지말자
 
+<br>
 
-![image](http://www.troot.co.kr/tech/kalkal.jpg){: .align-center width="60%"} 
+![image](https://leeyeonjun85.github.io/home/assets/images/etc/kalkal.jpg){: .align-center width="60%"}  
+
 
 
 
