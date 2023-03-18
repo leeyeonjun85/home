@@ -379,6 +379,8 @@ collections:
 
 
 
-
-# gem install bundler
-# bundle exec jekyll serve
+### Code Snippet
+  # jekyll 개발서버를 사용하기 위한 번들러 설치
+    # gem install bundler
+  # jekyll 개발서버 실행
+    # bundle exec jekyll serve
