@@ -1,5 +1,5 @@
 ---
-title: "Open Weather API를 이용한 날씨정보 어플 만들기"
+title: "Open Weather API를 이용한 날씨정보 웹어플 만들기"
 excerpt: "OpenWeather API, MongoDB, Django 활용"
 
 categories:
@@ -30,7 +30,7 @@ last_modified_at: 2023-03-30
 <br><br>
 
 
-# Open Weather API를 이용하여 나만의 날씨정보 어플 만들기
+# Open Weather API를 이용하여 나만의 날씨정보 웹 어플리케이션 만들기
 
 
 <br><br>
