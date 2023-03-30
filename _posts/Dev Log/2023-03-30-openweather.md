@@ -70,7 +70,7 @@ Open Weather API 는 전세계의 날씨정보를 무료로 제공한다.
 ## Open Weather API 의 도시데이터 가져오기
 - [Open Weather API 홈페이지](https://openweathermap.org/)에서 날씨정보를 받기 위해서는 먼저 홈페이지에 가입하고 API Key를 발급 받아야 한다.
 - 그리고 Open Weather API 의 날씨정보를 검색하는 방법은 크게 두 가지가 있는데, `도시이름(영어)`으로 검색하는 방법, `도시ID(숫자)`로 검색하는 방법이 있다.
-- 먼저 [여기](http://bulk.openweathermap.org/sample/)에서 Open Weather API에서 사용하는 도시정보를 JSON 파일 형태로 받을 수 있다.
+- 먼저 [여기](http://bulk.openweathermap.org/sample/){:target="_blank"}에서 Open Weather API에서 사용하는 도시정보를 JSON 파일 형태로 받을 수 있다.
 
 
 <div style="width : 80%; margin : auto;">
