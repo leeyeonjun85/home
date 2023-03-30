@@ -38,7 +38,7 @@ last_modified_at: 2023-03-30
 
 ## 완성된 '나만의 날씨정보 어플'
 
-- ['나만의 날씨정보 어플' 바로가기](http://leeyj85.shop/etc/openweather/)  
+- ['나만의 날씨정보 어플' 바로가기](http://leeyj85.shop/etc/openweather/){:target="_blank"}  
 
 <div style="width : 80%; margin : auto;">
   <a href="http://leeyj85.shop/etc/openweather/" target="_blank">
@@ -241,7 +241,7 @@ function get_ow_data()  {
 ## `이연준의 날씨정보` 어플리케이션 사용해보기
 
 ### 사용 방법  
-1. ['이연준의 날씨정보' 바로가기](http://leeyj85.shop/etc/openweather/)  
+1. ['이연준의 날씨정보' 바로가기](http://leeyj85.shop/etc/openweather/){:target="_blank"}  
 2. `도시를 선택`한다.  
 3. `날씨 보기`를 클릭한다.  
 4. 해당 도시의 날씨를 확인한다.  
