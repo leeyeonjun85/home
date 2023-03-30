@@ -382,5 +382,7 @@ collections:
 ### Code Snippet
   # jekyll 개발서버를 사용하기 위한 번들러 설치
     # gem install bundler
-  # jekyll 개발서버 실행
+  # Run jekyll Dev. Server!
     # bundle exec jekyll serve
+  # Dev. Sever is...
+    # http://127.0.0.1:4000
