@@ -1,6 +1,6 @@
 ---
 title: "Open Weather API를 이용한 날씨정보 어플 만들기"
-excerpt: "나만의 날씨정보 어플리케이션을 만들자"
+excerpt: "OpenWeather API, MongoDB, Django 활용"
 
 categories:
   - Dev Log
@@ -10,6 +10,7 @@ tags:
   - 코딩
   - API
   - mongoDB
+  - Django
 
 use_math: true
 
@@ -55,10 +56,11 @@ last_modified_at: 2023-03-30
 Open Weather API 는 전세계의 날씨정보를 무료로 제공한다.  
 그 정보를 이용하여 나만의 날씨정보를 보여주는 어플리케이션을 만들어보자.  
 
-- 날씨 데이터 : Open Weather API
-- 사용 언어 : Python
-- 웹 프레임 워크 : Django
-- 데이터베이스 : MongoDB  
+- 필요한 기술
+  - 날씨 데이터 : Open Weather API
+  - 사용 언어 : Python
+  - 웹 프레임 워크 : Django
+  - 데이터베이스 : MongoDB  
 {: .notice--danger}
 
 
