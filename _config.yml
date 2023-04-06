@@ -386,3 +386,16 @@ collections:
     # bundle exec jekyll serve
   # Dev. Sever is...
     # http://127.0.0.1:4000
+    # To stop Press `Ctrl + C`
+
+
+
+
+
+# {: .notice}
+# {: .notice--primary}
+# {: .notice--info}
+# {: .notice--warning}
+# {: .notice--danger}
+# {: .notice--success}
+

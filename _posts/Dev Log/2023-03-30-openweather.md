@@ -267,18 +267,6 @@ function get_ow_data()  {
 <br>
 
 
-<!-- 
-
-
-{: .notice}
-{: .notice--primary}
-{: .notice--info}
-{: .notice--warning}
-{: .notice--danger}
-{: .notice--success}
-
- -->
-
 
 
 
