@@ -1,6 +1,6 @@
 ---
 # title: "이연준 소개"
-permalink: /about/
+permalink: /portfolio/
 layout: single
 
 toc: true
@@ -16,7 +16,7 @@ last_modified_at: 2022-11-02
 
 <br>
 
-# 저를 소개합니다😄
+<p> Portfolio </p>
 
 <br>
 

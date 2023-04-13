@@ -338,44 +338,22 @@ defaults:
       layout: single
       author_profile: true
       share: true
-  # _Life
-  - scope:
-      path: ""
-      type: Life
-    values:
-      layout: single
-      classes: wide
-
-      # 왼쪽 사이드바
-      author_profile: true
-
-      # 오른쪽 사이드바
-      toc: false
-      toc_sticky: false
-      toc_label: "MENU"
-
-      # 기타 설정
-      comments: true
-      share: true
-      related: true
-      show_date: true
-      date_format: "%Y-%m-%d"
-      words_per_minute: 250
 
 
 
 
-# Collections
-collections:
-  recipes:
-    output: true
-    permalink: /:collection/:path/
-  pets:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
+# # Collections
+# collections:
+#   recipes:
+#     output: true
+#     permalink: /:collection/:path/
+#   pets:
+#     output: true
+#     permalink: /:collection/:path/
+#   portfolio:
+#     output: true
+#     permalink: /:collection/:path/
+
 
 
 
