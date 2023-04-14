@@ -21,21 +21,10 @@ last_modified_at: 2023-01-16
 ---
 
 
-<div style="text-align : center;">
-  <img alt="image" width="80%"
-  src="https://lh3.googleusercontent.com/fife/AAbDypCXUiJMZ6fUWSd_BhOMgic50T5Ilhb0D0_kqkkd49Y5f1_RFYbt5Qh8QcX0XaZxFwsQ1BSYcEFVGGggHeu2yNGz4H5TJv9Z7UwY6O1fDriMmpdYRLSR_66-l9izq0bHBvtykdqxV8v1-D7NBCgsFrCERnIOwU8MLSUSQkFBza0BymUM86CZvEzr_7kcsFyyBF3-eOVGe1Xy7xNZF51g7q8I9rDZI9lyQGCWB5wPkd-d_du-_rQ87WFZkHAzPJrYHA6jlJTIfGNGypisAtmxfoeX3v1LIrbls-kJ6ggt-NafMkKpaHaRijCoy-wpSLilhoFxgSsdoJkLx8tbWejy-Yll-25WwR6hAbT5bSm3GF-y1NwbQ1Aj94LMkCxLyHaXSPmMQTrho0rfjYgOp1Mn3qPMERnatb5nAu7qInYV1YtAZEhvJ3Ng2brLHdvfgLaRiMuumtqIU3LF_TE6VrIIHml2cIkUcSirAih-NqwAeNvP2AL7ivSfnyD5JDVVHhLDFCEL5-qIZZBS1onfqXEWODdFH5EV3lEwoiN5wdyIMKwzuxyi0CACJeQSSnOzVUxIV6EOIJhryrBlsa7O4xFf0afg2tV5gNL1_pYm3zMyJMfwW6ptMk8_cfkhc_tZTyyl0qQOdpBQmcSe_4pUyYzLNd0vLe6_7WCQBXA4T-afTLJb3ucw9FZ29bhWohm_VWCYVbrofUk5sIukxbbKOG9i6uwIn4qjOvCuTHqudnckqXL4HeRaLNbXNaFfTXN5ioH41xIP4ZUQvev-duezO4OZLI8eO-H-64doamXb9bm31fyq_ymwzJGo331IPbR9mTxh8hNKPmPCjmce4ewaCuI_zEjrc9NQA2iCLqhTm8Rp26wA_lJszK64GRZkj_DlinBh83cr1Ft4QILF7_23YyZfQ5YpE3Ts952OHZ58fCPwreJifPIIS0Rcppt8tod1yHtYMnxdv-XAEY5QCCpzU_cLSiTcxxUzwfLrWs0tyuIL8gvaVMcn8IgAoLxGRqThbLMQJBWNy8pmaED3BlYBZlTTlgefhM4r15GMK3tKc_tkP6UCrhB5huSib_wXZ99-Ng32ru6bVLZdSc1-0mqPy2M39X4pYhnkRJQHWK43G5XWukqIxPJo65ftC6mBEG4IqFHU9u6l-6TQEgxb3_7Jr0rEdoPDnNgvXrC4xTWoqlq7H99VgjPJkn4GE4SG3Dt2wjGsIJ34g6bldgstiKMNeq8gNeHe8uca_Ej0F-d2XJud61l5BF2HSeiXOtmOWneZhWwysU_D_ZVJHkOOhBbFY9VA1yaovj91jDcA-ofW5cUVVR3QVWOn9V__u2thbSkPfBpT6Y8nLf3AUqXRnYxHZHklptIhwatGkmdm_YlX3MPCjJOegW3ZiVfbw2fFiWtWMhzij3-4_avpAwO_crjlKLDDptV-HFflZ_IuCy4PWXn-qRaoXbyHPlRdbrsQrxsrQOV8agIojta_PjI62PCyQOvKLGAKxh-NQf0wVkkO958V09aqk7rM2k2B_AGYog5v=w1920-h780">  
-</div>  
+![image](../../assets/images/etc/diabetes-2058045_1920.png){: .align-center width="60%"} 
   
 
 
-<br><br><hr><br><br>
-<div style="text-align : center; font-size : 2rem">
-
-토이데이터 살펴보기
-Scikit-Learn : Diabetes
-
-</div>  
-<br><br><hr><br><br>
 
 # Scikit-Learn 의 Diabetes 데이터셋
 
@@ -350,10 +339,7 @@ diabetes = datasets.load_diabetes()
   plt.show()
   ```
 
-  <div style="text-align : center;">
-    <img alt="image" width="80%"
-    src="https://lh3.googleusercontent.com/fife/AAbDypCUozLz2f-qxKzSwFpWAQahGSKTM0SWOK4H8Th7HDlaCQZK1-6aa5LEDHV6gE6mqAAPTSkO6nGUGMvUPmx5w7DtuQEgxTeW-V1YbL-ziLY5cCidjCdb5aCUg95U4sCfT2ZPL9mCtpXjT3_APUA6vOZSzqY4OaxVYa-8CmbfQXq06pFdvY0jfE12bVXigqLx3-8WP8t6v1SxS0vCLcIgprnfwyrU1UbpTT46_jSakjA78KINyQx5xBBJl6Z_QXILxARZgkdM-pQhWTPm9yjU09BuGt7n7pJn0ZMo9CMDjDF1DyJp_Cymt0sVV0j9PsiIVQQS6m6rI95bTaq2NjjTzqAcOLl8hbc4-uT4N-HGkgpdRJpjsBCAyheJl1CmTz8fX6emc6V42pxf9LAETDthV-lpery-RjA_R22uhKxRM1xmqe5C4eUWEUYpmvHgXoydwaVmMA5JNzbYwfepE1vIeeJy6yFqALGm7Ou1u-4o838WTi2Kq6VW653z8yzVmsxdI-WnWuBy8g2VZRNRVex97jlw5a4lOmo69o_xQ3A86pstV6OxkCMpv-OU9DjUR1SnBXQC2qek7dinFsujqsD4SBKI3hCoIq_prWoQie6enWXacGPIRr9H-f92KwFz9TzIW04sIHaJptDtBKKbDKBxwaxCCTlkZ-lRyYUiYCzHcWjAfD7OoqrkpIQ5sybTyfvycgl87UuzktKYHaDh5L9Dc3FHBeuZIvDdv7LlPqzDMfIOPv-Pm0gKgKRJn7W7Nhg6gCNq4LVaxWS7j5_VyC0wmU4EE2wjNNzHhF6-jMYSz1fWC5j4MhDThu0I7bUBoUJZ7gliDXtaQG83f5wL5p7Iyfe1bRazrOuzVHWOoB83grRfFqmNaWPS5zwzw8mn736F80WBpSHfik_gP-2wvaL4Tz6aDg0EP676HmGlkE9jdxqSL_tsQuefqhl2ou0HEG2-8pqnoFZRBG1dekaV8ONy_XkElwtl9qteNTL3bIgRWB9b5rLI0faUO6N7vxKqKK7a0ko8zxUXCy62IAxo_-ZDsYfSLvf1DZsBdL7xltDs8ghyV3dgJ23pWMDG3FqbO6HVDuZdw9ZblLUBBHlgUSsFJwM09pLdfoAkCd5Or_eRyNNNxiPiAP3kUpgXL1mhAqvcWHsRXPcfYBUKEbRgB6y4YmeWYInCukqiq71-hXyqvlGJtzog5iZOTaoiswua7PgPyJeYwWWaE2rtMUAMF13KC7ik-XnZ6je8ooWFO0uyiRy6WcvjBbR-l5R9bA2JWV3b4t-j83ONAmrT3xNXP-5wDDxziWnGda21CCqlCwWzJFytuuTDmruylm2h0FzrVzdh_YI3J5JebDZdnfdVruC5AGMPYEabAg-aouCs4tIfYXI87zU2wn0KgDbTmZy6mN1OHP-asxI88Kut52dr3Vp2u2XkSDXBIQZ9czfjAXZAoUZT5ZvSW6yREEKvmsLqj-ho4ha0AG4u8UiRPSXeImwQYzsGNp3N0ZmyGzaQfS0L76mag8UFmnBUoiyBe-Up=w1920-h865">  
-  </div>  
+  ![image](../../assets/images/aib/results/sklearn_diabetes_corr.png){: .align-center width="90%"}  
   
 
 - 데이터 분포 시각화
@@ -375,10 +361,7 @@ diabetes = datasets.load_diabetes()
   fig.savefig(path_results + file_name, dpi=150, facecolor='#eeeeee')
   ```  
 
-  <div style="text-align : center;">
-    <img alt="image" width="95%"
-    src="https://lh3.googleusercontent.com/fife/AAbDypAssKrnCnSbF4uSrisVveDsEJ4RH4iG_20tHnJWzTyLOKTHqfI0xFQzc-omFyzhi2_RAnxvs5ur6WsEoO7mzFVI9MH_3XMb5VYzbadYGZ4aQB1_lNFP2x0ssnN9FK5Fa3RCxZn9SSaTISUL1XnDXmk9BXJPAjij-h3L9Q3mWDbl0k-B6rzggxV_l47NIoREppHCEJMNzMuGVxpFgXHnH8PaZFZS5HnfeEOGvGj12C8OrW8o2kRiSsrXbLvVeLgkXb8zDwn5rqmyt6s8XWZ2ZU1TW4Wj8FvFpWr7iISi3TKhKSPNfwdise1Bun18JIIoxgC1goCsj34wydqjofsuWW2NDL4M35mYt8MBgntgzXWwvY2_yX9N2EvY9nQkhj0pzV2D2uiM_-BpmJHWq3pkFIXIMqFlPZdjmsuGm8o7OGw8fCYD7kKYe6Sbe7O1v9TT_Qw3KrmaZATdLoMYRO9wKNPvo36ZL5_r2OPM1gvKCpcPaAMbooYKGtgItIgIq45ywaEpCesExXpoiGuqavZZIucUwa-gQndAcUgB3HOmS8nftSqMXJCUJVY7JeOObNlOJpv8e7YZwp_CoDEFIg8yahSW7F3zrSIzJ6IRlDo51WlizmKav-fcRIfkei37MdSS_2yUveuZ7sV469aqFiW7NhZVrLPsNP5N1SxsG8tynnGe_1y02zDGdsiPufWQDbGleTMtMbzS9w4z_qmUtRLvAPJ1eD0ehEOa_EEyB57RDDhA5snd85VQpfUXlGI_BKPg9B3-TiKhTUa7Bweoh322eAINjvqPSd0A-Bx6XZOY6Gf86esOAyic5tlc63cUT_LfKOd8E9EBU4tEEn9IU1iN_IPhKxBLYxiE_wdRPjCP_4HiOAXQn3iRVlFforfB7eddMMR_61NFWgmGTNT89II_B932CxI-suDvEc1Lm4WybuKiKGiwBQqIJvX_V3FvahUW9yvDHE9XqnAhS-lr4wcOrlA05jJFS4GjHa63TODBlNDW8fBr376p2Cb46gZreWswjvRja_j7QBRof1quo0s_VnYv-KT6c8DYSQ4_KCAs8IcGbBFNTizm3RpYqwZqJ3TW7EdZb4R9OqYdosv4ZHcrL7kjC26UX3IuYghahSfnQKcrGwkLqDNy_AOKq9MImCfANMIPoTW20Gr3iGNtzEnu5gw_mNmqVvKOGrbEb_2nVAX93k0ghqEPXdnUqRBVv_iEqbeQAbtwwiyUAjw9Kj3yrPvvziMCHVZIGgXbFKzFIuKH9YTlt4g3oboUEBUJ5qgtI0hAgg-UbMxSD9sH6RTH67Sh8UvEFNP3-ll8DK1dqaCJBkZoVo8xHt6RGoTiBip0svwycZ1ddz9ObkCKDVorXNTAkKnhBTLcfAQ35q11qMMFfk7II4CBPEB62_11CNL-ZYhz67ok1_n1YQH_OHKSV1lUuWqTxZbMMJ5tMtB-Tb2dTLNKT7j-z7OKajlGp9YRgXpj0QYow-QZsvRCduPRqRz4ToJdDFB5yWG1r6OgOZfqnNirPd8wLy0iG4hB=w1200-h865">  
-  </div>  
+  ![image](../../assets/images/aib/results/sklearn_diabetes_scatterPlots.png){: .align-center width="90%"}  
 
 
 
@@ -386,3 +369,8 @@ diabetes = datasets.load_diabetes()
 
 
 
+<br><br><br><br>  
+<center>  
+<h1>끝까지 읽어주셔서 감사합니다😉</h1>  
+</center>  
+<br><br><br><br>  
