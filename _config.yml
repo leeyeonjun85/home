@@ -18,11 +18,11 @@ minimal_mistakes_skin    : "air"
 # Site Settings
 locale                   : "ko-KR"
 # locale                   : "en-US"
-title                    : "Lee Yeonjun's HOME"
+title                    : "Lee Yeonjun's Git Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Lee Yeonjun"
-description              : "An amazing website."
+description              : "Lee Younjun's Git Blog is Development Blog about Data Analysis, Data Science, Data Engineering, Machine Learning, Deep Learning and AI"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "leeyeonjun85/home"
