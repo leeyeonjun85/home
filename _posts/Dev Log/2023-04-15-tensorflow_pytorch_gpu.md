@@ -58,8 +58,6 @@ last_modified_at: 2023-04-15
 - VSCode 열어서 Gitbash 터미널 열어서 `source C:/ProgramData/Anaconda3/Scripts/activate gpu_test`로 가상환경 실행
 - 이후로 라이브러리는 VSCode 에서 Gitbash 터미널에서 가상환경이 실행된 상태에서 설치하면 됨
 
-![image](../../assets/images/post/devlog/20230415_224158.png){: .align-center width="80%"} 
-
 - 필요한 라이브러리 설치 `pip install ipykernel pandas matplotlib`
 
 
