@@ -9,7 +9,7 @@ tags:
   - 개발일지
   - 코딩
   - Tensorflow
-  - Pytorch를
+  - Pytorch
   - CUDA
 
 use_math: true
