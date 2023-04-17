@@ -35,7 +35,13 @@ last_modified_at: 2022-11-02
 ### 현재...
 '[오투공부방](http://leeyj85.shop/o2study/)'을 아내와 함께 운영📚  
 
-![image](../assets/images/profile/o2study.jpg){: .align-center width="60%"}
+
+<div style="width : 80%; margin : auto;">
+  <a href="http://leeyj85.shop/o2study/" target="_blank">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/profile/o2study.jpg">
+  </a>
+</div>  
+
 
 열심히 코딩공부를, 특히 AI·데이터사이언스 관련하여 열공중🔥💻  
 
