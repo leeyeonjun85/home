@@ -14,7 +14,7 @@ tags:
 use_math: true
 
 header:
-  teaser: /assets/images/aib/artificial-intelligence-3685928_1920.png
+  teaser: /assets/images/etc/fashion-902657_1920.jpg
 
 last_modified_at: 2023-02-19
 ---

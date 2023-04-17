@@ -14,7 +14,7 @@ tags:
 use_math: true
 
 header:
-  teaser: /assets/images/aib/artificial-intelligence-3685928_1920.png
+  teaser: /assets/images/etc/penguin_png.png
 
 last_modified_at: 2023-02-21
 ---

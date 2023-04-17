@@ -15,7 +15,7 @@ tags:
 use_math: true
 
 header:
-  teaser: /assets/images/etc/bitcoin-7693848_1920.png
+  teaser: /assets/images/etc/rainbow-4047523_1920.jpg
 
 last_modified_at: 2023-03-30
 ---

@@ -15,7 +15,7 @@ tags:
 use_math: true
 
 header:
-  teaser: /assets/images/etc/laptop-1839876.jpg
+  teaser: /assets/images/etc/clocks-257911_1920.jpg
 
 last_modified_at: 2023-04-16
 ---
