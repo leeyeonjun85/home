@@ -39,8 +39,8 @@ last_modified_at: 2023-04-16
 
 
 # Python에서 시간 사용하기  
-> 내장함수 time(), datetime()으로 다양하게 시간 사용하기
-
+> 내장함수 time(), datetime()으로 다양하게 시간 사용하기  
+> [관련 소스코드 보기](https://github.com/leeyeonjun85/leeyeonjun85/blob/main/study/python/time_datetime.ipynb)
 
 
 
